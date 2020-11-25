@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Water_Jugs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="yCg-h5-QH7" userLabel="Values Stack View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="404.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kHD-XF-7tk" userLabel="Title Stack View">
+                                        <rect key="frame" x="16" y="16" width="382" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Jugs 💦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Has-Jy-xSk" userLabel="Title Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="43"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you're still alive in 5 minutes..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oN2-TX-rW1" userLabel="Subtitle Label">
+                                                <rect key="frame" x="0.0" y="47" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZgY-SR-PwM" userLabel="Input Stack View">
+                                        <rect key="frame" x="16" y="104" width="382" height="198"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yAw-CA-GtF" userLabel="X Value Stack View">
+                                                <rect key="frame" x="24" y="0.0" width="334" height="60"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xImage" translatesAutoresizingMaskIntoConstraints="NO" id="jD1-R5-UaF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="M0F-rV-8pK"/>
+                                                            <constraint firstAttribute="width" constant="60" id="NUu-fc-zDz"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Jug X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfc-eN-UaY" userLabel="X Title Label">
+                                                        <rect key="frame" x="76" y="19.5" width="118.5" height="21.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6j-Zc-Z6d" userLabel="X Value Label">
+                                                        <rect key="frame" x="210.5" y="16" width="13.5" height="28.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YGG-mb-Pi2" userLabel="X Stepper">
+                                                        <rect key="frame" x="240" y="14" width="94" height="32"/>
+                                                        <connections>
+                                                            <action selector="xValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="FBj-Mt-5rd"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="B3N-jH-vH5" userLabel="Y Value Stack View">
+                                                <rect key="frame" x="24" y="72" width="334" height="54"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yImage" translatesAutoresizingMaskIntoConstraints="NO" id="mbL-HY-D2q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="IOZ-1P-VtE"/>
+                                                            <constraint firstAttribute="height" constant="54" id="SSI-LA-cYU"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Jug Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pH3-JP-uBe" userLabel="Y Title Label">
+                                                        <rect key="frame" x="76" y="16.5" width="118.5" height="21.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kw1-Gv-UB8" userLabel="Y Value Label">
+                                                        <rect key="frame" x="210.5" y="13" width="13.5" height="28.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yCb-bg-P93" userLabel="Y Stepper">
+                                                        <rect key="frame" x="240" y="11" width="94" height="32"/>
+                                                        <connections>
+                                                            <action selector="yValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="APs-nx-4MU"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-77-Yv8" userLabel="Z Value Stack View">
+                                                <rect key="frame" x="24" y="138" width="334" height="60"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zImage" translatesAutoresizingMaskIntoConstraints="NO" id="xAu-ui-zAf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="Cor-Tb-FVZ"/>
+                                                            <constraint firstAttribute="height" constant="60" id="UxV-KA-TQT"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Goal Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vb-NE-lmR" userLabel="Z Title Label">
+                                                        <rect key="frame" x="76" y="19.5" width="118.5" height="21.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGR-U2-9MF" userLabel="Z Value Label">
+                                                        <rect key="frame" x="210.5" y="16" width="13.5" height="28.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4qn-Ez-YcM" userLabel="Z Stepper">
+                                                        <rect key="frame" x="240" y="14" width="94" height="32"/>
+                                                        <connections>
+                                                            <action selector="zValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="hQo-Xy-wfc"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="24" bottom="0.0" right="24"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iig-4k-fYt" userLabel="Status Stack View">
+                                        <rect key="frame" x="16" y="326" width="382" height="62.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsp-wF-tDB">
+                                                <rect key="frame" x="122.5" y="0.0" width="137" height="36"/>
+                                                <color key="backgroundColor" red="0.21326637500000001" green="0.74464449919999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <inset key="contentEdgeInsets" minX="12" minY="8" maxX="12" maxY="8"/>
+                                                <state key="normal" title="Run Simulation">
+                                                    <color key="titleColor" red="0.9837698869" green="0.9953765913" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="runSimulation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAX-Y4-5BM"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Run for Solution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b13-v5-O2F" userLabel="Status Label">
+                                                <rect key="frame" x="149.5" y="48" width="83" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xg2-S4-Iij" userLabel="Simulation Stack View">
+                                <rect key="frame" x="0.0" y="484.5" width="414" height="323.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: 4 Gallons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-7v-fcV" userLabel="Goal Label">
+                                        <rect key="frame" x="152" y="0.0" width="110" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="92e-t4-WKi" userLabel="Jugs Stack View">
+                                        <rect key="frame" x="35" y="35" width="344" height="253.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dpP-7f-hUt" userLabel="Left Stack View">
+                                                <rect key="frame" x="32" y="0.0" width="140" height="237.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mdQ-Hx-fM7" userLabel="Capacity Stack View">
+                                                        <rect key="frame" x="37" y="0.0" width="66" height="40.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-4l-Th3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="66" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Gallons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOJ-0g-tTk">
+                                                                <rect key="frame" x="4.5" y="23.5" width="57" height="17"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_jug" translatesAutoresizingMaskIntoConstraints="NO" id="zc6-i5-xTH">
+                                                        <rect key="frame" x="0.0" y="60.5" width="140" height="140"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Gallons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5r-ym-FtJ">
+                                                        <rect key="frame" x="41.5" y="220.5" width="57" height="17"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n55-hn-g6l" userLabel="Right Stack View">
+                                                <rect key="frame" x="172" y="0.0" width="140" height="237.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-7n-fdT" userLabel="Capacity Stack View">
+                                                        <rect key="frame" x="37" y="0.0" width="66" height="40.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-kz-Npr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="66" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Gallons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muO-BZ-guu">
+                                                                <rect key="frame" x="4.5" y="23.5" width="57" height="17"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_jug" translatesAutoresizingMaskIntoConstraints="NO" id="Zw2-DD-fKW">
+                                                        <rect key="frame" x="0.0" y="60.5" width="140" height="140"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Gallons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-7U-An1">
+                                                        <rect key="frame" x="41.5" y="220.5" width="57" height="17"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="32" bottom="16" right="32"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYE-vB-YfD" userLabel="Step Label">
+                                        <rect key="frame" x="186.5" y="304.5" width="41.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xg2-S4-Iij" secondAttribute="trailing" id="YqH-A2-3hW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yCg-h5-QH7" secondAttribute="trailing" id="b8T-Yi-kUn"/>
+                            <constraint firstItem="yCg-h5-QH7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gRX-jn-aM3"/>
+                            <constraint firstItem="yCg-h5-QH7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hZe-hv-dNd"/>
+                            <constraint firstItem="Xg2-S4-Iij" firstAttribute="top" secondItem="yCg-h5-QH7" secondAttribute="bottom" constant="36" id="ltA-NO-AxU"/>
+                            <constraint firstItem="Xg2-S4-Iij" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vsV-EI-15X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentGoalLabel" destination="tkX-7v-fcV" id="adl-lL-lKe"/>
+                        <outlet property="currentStepLabel" destination="jYE-vB-YfD" id="fJb-ky-YKF"/>
+                        <outlet property="currentVolumeLeftLabel" destination="o5r-ym-FtJ" id="fHL-fT-clL"/>
+                        <outlet property="currentVolumeRightLabel" destination="zLp-7U-An1" id="qHO-ym-NZR"/>
+                        <outlet property="jugImageX" destination="zc6-i5-xTH" id="nmg-me-Nh1"/>
+                        <outlet property="jugImageY" destination="Zw2-DD-fKW" id="NJV-Io-LUY"/>
+                        <outlet property="runSimulationButton" destination="Bsp-wF-tDB" id="znU-Qw-gQp"/>
+                        <outlet property="statusLabel" destination="b13-v5-O2F" id="avf-dz-oP5"/>
+                        <outlet property="totalCapacityLeftLabel" destination="mOJ-0g-tTk" id="iwV-DY-bpu"/>
+                        <outlet property="totalCapacityRightLabel" destination="muO-BZ-guu" id="2vE-fs-Vmm"/>
+                        <outlet property="xValueLabel" destination="o6j-Zc-Z6d" id="KGY-Zc-Bi8"/>
+                        <outlet property="xValueStepper" destination="YGG-mb-Pi2" id="QpB-D8-bWa"/>
+                        <outlet property="yValueLabel" destination="Kw1-Gv-UB8" id="aQf-Bq-GeX"/>
+                        <outlet property="yValueStepper" destination="yCb-bg-P93" id="850-1n-yD8"/>
+                        <outlet property="zValueLabel" destination="uGR-U2-9MF" id="8Zi-9f-TC7"/>
+                        <outlet property="zValueStepper" destination="4qn-Ez-YcM" id="LP7-Q5-b72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="empty_jug" width="140" height="140"/>
+        <image name="xImage" width="80" height="80"/>
+        <image name="yImage" width="80" height="80"/>
+        <image name="zImage" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

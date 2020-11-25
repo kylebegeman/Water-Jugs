@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27058A6B256EC2BB001C2F69 /* SimulationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27058A6A256EC2BB001C2F69 /* SimulationStep.swift */; };
+		27058A6C256EC2BB001C2F69 /* SimulationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27058A6A256EC2BB001C2F69 /* SimulationStep.swift */; };
+		2776FEB4256E65FE00355C74 /* PourSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776FEB3256E65FE00355C74 /* PourSimulation.swift */; };
 		27E6D8AF256E56DC00E20CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E6D8AE256E56DC00E20CA6 /* AppDelegate.swift */; };
 		27E6D8B1256E56DC00E20CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E6D8B0256E56DC00E20CA6 /* SceneDelegate.swift */; };
-		27E6D8B3256E56DC00E20CA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E6D8B2256E56DC00E20CA6 /* ViewController.swift */; };
+		27E6D8B3256E56DC00E20CA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E6D8B2256E56DC00E20CA6 /* MainViewController.swift */; };
 		27E6D8B6256E56DC00E20CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E6D8B4256E56DC00E20CA6 /* Main.storyboard */; };
 		27E6D8B8256E56DF00E20CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E6D8B7256E56DF00E20CA6 /* Assets.xcassets */; };
 		27E6D8BB256E56DF00E20CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E6D8B9256E56DF00E20CA6 /* LaunchScreen.storyboard */; };
@@ -35,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27058A6A256EC2BB001C2F69 /* SimulationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationStep.swift; sourceTree = "<group>"; };
+		2776FEB3256E65FE00355C74 /* PourSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PourSimulation.swift; sourceTree = "<group>"; };
 		27E6D8AB256E56DC00E20CA6 /* Water Jugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water Jugs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E6D8AE256E56DC00E20CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E6D8B0256E56DC00E20CA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27E6D8B2256E56DC00E20CA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27E6D8B2256E56DC00E20CA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		27E6D8B5256E56DC00E20CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27E6D8B7256E56DF00E20CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27E6D8BA256E56DF00E20CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,11 +106,11 @@
 			children = (
 				27E6D8AE256E56DC00E20CA6 /* AppDelegate.swift */,
 				27E6D8B0256E56DC00E20CA6 /* SceneDelegate.swift */,
-				27E6D8B2256E56DC00E20CA6 /* ViewController.swift */,
-				27E6D8B4256E56DC00E20CA6 /* Main.storyboard */,
-				27E6D8B7256E56DF00E20CA6 /* Assets.xcassets */,
-				27E6D8B9256E56DF00E20CA6 /* LaunchScreen.storyboard */,
+				27E6D8B2256E56DC00E20CA6 /* MainViewController.swift */,
 				27E6D8BC256E56DF00E20CA6 /* Info.plist */,
+				27E6D8B7256E56DF00E20CA6 /* Assets.xcassets */,
+				27E6D8E2256E56F500E20CA6 /* Storyboards */,
+				27E6D8E3256E573800E20CA6 /* Simulation */,
 			);
 			path = "Water Jugs";
 			sourceTree = "<group>";
@@ -126,6 +131,24 @@
 				27E6D8D2256E56DF00E20CA6 /* Info.plist */,
 			);
 			path = "Water JugsUITests";
+			sourceTree = "<group>";
+		};
+		27E6D8E2256E56F500E20CA6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				27E6D8B9256E56DF00E20CA6 /* LaunchScreen.storyboard */,
+				27E6D8B4256E56DC00E20CA6 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		27E6D8E3256E573800E20CA6 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				2776FEB3256E65FE00355C74 /* PourSimulation.swift */,
+				27058A6A256EC2BB001C2F69 /* SimulationStep.swift */,
+			);
+			path = Simulation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E6D8B3256E56DC00E20CA6 /* ViewController.swift in Sources */,
+				27E6D8B3256E56DC00E20CA6 /* MainViewController.swift in Sources */,
+				2776FEB4256E65FE00355C74 /* PourSimulation.swift in Sources */,
+				27058A6B256EC2BB001C2F69 /* SimulationStep.swift in Sources */,
 				27E6D8AF256E56DC00E20CA6 /* AppDelegate.swift in Sources */,
 				27E6D8B1256E56DC00E20CA6 /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E6D8C6256E56DF00E20CA6 /* Water_JugsTests.swift in Sources */,
+				27058A6C256EC2BB001C2F69 /* SimulationStep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
